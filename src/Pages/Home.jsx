@@ -243,7 +243,7 @@ export default function Home() {
     after:bg-[linear-gradient(to_bottom,rgba(10,20,40,0.35)_0%,rgba(10,20,40,0.15)_60%,rgba(10,20,40,0.55)_100%)]">
     <div className="bg-cover bg-center w-full h-full absolute top-0 left-0 w-100 h-100 animate-[subtleZoom_14s_ease-in-out_infinite_alternate] " style={{ backgroundImage: `url(${heroImg})` }} > </div>
     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center z-10">
-      <h1 className="main-title text-7xl font-normal font-['Reey']">Travel & <span class="hero-underline">Adventures
+      <h1 className="main-title text-7xl font-normal font-['Reey']">Travel & <span class="hero-underline">Adventures vishal
       </span></h1>
       <div className="text-4xl text-white font-medium capitalize pt-5">Where Would You Like To Go?</div>
     </div>
