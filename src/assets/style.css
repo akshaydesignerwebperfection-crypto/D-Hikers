@@ -1,0 +1,115 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;    
+.container {
+    margin: 0 auto;
+    padding: 0px 30px;
+}
+  @font-face {
+    font-family: 'Reey';
+    src: url('./font-family/Reey-Regular.woff2') format('woff2'),
+        url('./font-family/Reey-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+h4{
+    font-family: 'Reey';
+}
+body{
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: -0.2px;
+
+}
+.main-title{
+  color:#e8604c;
+
+}
+ .bottom-footer-wrapper{
+   padding-left: 0px;
+} 
+.brand-btn{
+  background-color: #e8604c;
+}
+
+/*----- footer bottom fixed ------------*/
+html,body{
+    height: 100%;
+}
+div#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.main-wrapper {
+    flex: 1;
+}
+/*----- footer bottom fixed end ------------*/
+@keyframes subtleZoom {
+  from { transform: scale(1); }
+  to   { transform: scale(1.04); }
+}
+.play-btn:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #fff;
+    opacity: 0;
+    border-radius: 8px;
+    -webkit-animation: pulse-border 1s linear infinite;
+    animation: pulse-border 1s linear infinite;
+}
+.play-btn:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #fff;
+    opacity: 0;
+    border-radius: 8px;
+    -webkit-animation: pulse-border-2 1.5s linear infinite;
+    animation: pulse-border-2 1.5s linear infinite;
+}
+
+@keyframes pulse-border{
+0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+100% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 0;
+}
+}
+@keyframes pulse-border-2{
+0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+100% {
+    -webkit-transform: scale(1.8);
+    transform: scale(1.8);
+    opacity: 0;
+}
+}
+
+.w-full.transition-all.bg-white.border {
+    border-bottom: none;
+    border-radius: 8px 8px 0px 0px;
+}
+
+::selection{
+    background-color: #e8604c;
+    color: #fff;
+}
+
+ 
+
