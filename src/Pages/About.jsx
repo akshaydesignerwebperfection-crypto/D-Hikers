@@ -68,7 +68,7 @@ export default function About() {
      <section className="bg-no-repeat bg-cover bg-center w-full h-full" style={{ backgroundImage:`url(${AboutBanner})`}}>
       <div className="container">
         <div className="py-16" >
-          <h2 className="text-4xl text-white font-bold">About</h2>
+          <h2 className="text-4xl text-white font-bold">About Us</h2>
           </div>
           <div className="flex justify-end">
             <ol className="flex gap-4 bg-white rounded-t-lg px-8 py-4 items-center w-fit">
