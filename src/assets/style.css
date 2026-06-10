@@ -3,7 +3,8 @@
 @tailwind utilities;    
 .container {
     margin: 0 auto;
-    padding: 0px 30px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
   @font-face {
     font-family: 'Reey';
@@ -113,3 +114,9 @@ div#root {
 
  
 
+@media (max-width:768px){
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+}

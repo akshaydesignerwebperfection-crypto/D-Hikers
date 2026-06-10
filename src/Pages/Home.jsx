@@ -239,19 +239,19 @@ export default function Home() {
   };
   return (
    <>
-   <section className="relative h-[700px] overflow-hidden after:content-[''] after:absolute after:inset-0 after:z-0
+   <section className="relative h-[500px] sm:h-[700px] overflow-hidden after:content-[''] after:absolute after:inset-0 after:z-0
     after:bg-[linear-gradient(to_bottom,rgba(10,20,40,0.35)_0%,rgba(10,20,40,0.15)_60%,rgba(10,20,40,0.55)_100%)]">
     <div className="bg-cover bg-center w-full h-full absolute top-0 left-0 w-100 h-100 animate-[subtleZoom_14s_ease-in-out_infinite_alternate] " style={{ backgroundImage: `url(${heroImg})` }} > </div>
     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center z-10">
-      <h1 className="main-title text-7xl font-normal font-['Reey']">Travel & <span class="hero-underline">Adventures
+      <h1 className="main-title text-5xl sm:text-7xl font-normal font-['Reey']">Travel & <span class="hero-underline">Adventures
       </span></h1>
       <div className="text-4xl text-white font-medium capitalize pt-5">Where Would You Like To Go?</div>
     </div>
   </section>
 
     <section className='relative '>
-        <div className="max-w-[1240px] mx-auto my-0 absolute left-1/2 -bottom-14 -translate-x-1/2 w-full bg-white rounded-md z-10">
-          <div className="flex justify-start items-center gap-5 shadow-lg rounded-lg p-4">
+        <div className=" static transform-none max-w-[1240px] mx-auto my-0 sm:absolute left-1/2 -bottom-14 sm:-translate-x-1/2 w-full bg-white rounded-md z-10">
+          <div className=" flex-wrap  md:flex-row flex justify-start items-center gap-5 shadow-lg rounded-lg p-4">
             {/* Destination */}
             <div className="flex items-center gap-2 border-b-2 border-[#EBE6DE] p-4 flex-1">
               <span className="sf-icon">
@@ -337,13 +337,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-   <section className=" pb-5 pt-[100px]">
+   <section className=" pb-5  pt-[60px] sm:pt-[100px]">
       <div className="container">
        <div className="text-center pb-7">
         <span className="main-title text-xl font-['Reey']">Destination lists</span>
        <h2 className="text-5xl text-[#313041] font-bold">Go Exotic Places</h2>
       </div>
-       <div className="grid grid-cols-3 gap-5">
+       <div className=" grid-cols-1 sm:grid-cols-2 grid md:grid-cols-3 gap-5">
       { blocks.map((block) =>
           (<div className="relative" key={block.id}>
            <img className="rounded-lg w-full h-100 object-cover"
@@ -365,11 +365,11 @@ export default function Home() {
 
   <section className="pt-12 pb-10">
       <div className='container'>
-        <div className="flex justify-between items-stretch gap-12 max-w-[1080px] mx-auto">
-      <div className="relative flex-[0_0_480px] h-[420px]">
-      <div className="bg-[#e8e8e8] h-[440px] w-[440px] absolute top-1/2 left-1/2 inset-0 -translate-x-1/2 -translate-y-1/2 rounded-[62%_38%_55%_45%/_48%_60%_40%_52%] "></div>
+        <div className=" flex-col md:flex-row flex justify-between items-stretch gap-12 max-w-[1080px] mx-auto">
+      <div className="flex-auto  relative sm:flex-[0_0_480px] h-[420px]">
+      <div className="bg-[#e8e8e8] w-full h-[400px] sm:h-[440px] sm:w-[440px] absolute top-1/2 left-1/2 inset-0 -translate-x-1/2 -translate-y-1/2 rounded-[62%_38%_55%_45%/_48%_60%_40%_52%] "></div>
 
-      <img className="w-[400px] h-[360px] absolute top-1/2 left-1/2  inset-0 -translate-x-1/2 -translate-y-1/2 rounded-[62%_38%_55%_45%/_48%_60%_40%_52%]"
+      <img className="w-full h-[340px] sm:w-[400px] sm:h-[360px] absolute top-1/2 left-1/2  inset-0 -translate-x-1/2 -translate-y-1/2 rounded-[62%_38%_55%_45%/_48%_60%_40%_52%]"
         src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9yb2Njb3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
         alt="Eiffel Tower Paris"/>
 
@@ -422,9 +422,9 @@ export default function Home() {
         <h5 className='text-xl main-title font-[Reey]'>Featured tours</h5>
         <h2 className='text-5xl text-[#333] font-bold'>Most Popular Tours</h2>
       </div>
-      <div className="flex gap-4 items-stretch">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:flex-row md:flex gap-4 items-stretch">
         {TourCards.map((tour) => (
-          <div className="w-1/2 shadow-lg rounded-[12px] overflow-hidden" key={tour.id}>
+          <div className=" w-full md:w-1/2 shadow-lg rounded-[12px] overflow-hidden" key={tour.id}>
               <div className="">
                 <img src={tour.image} alt={tour.title} />
               </div>
@@ -486,8 +486,8 @@ export default function Home() {
     after:bg-[linear-gradient(to_right,#000000e8_0%,rgb(4_8_26/68%)_55%,rgb(0_0_0/85%)_100%)]"
     style={{ backgroundImage: `url(${BookingBanner})` }}>  
   <div className="container">
-      <div className="flex items-center justify-between relative z-10" >
-        <div className="w-1/2">
+      <div className=" flex-col md:flex-row gap-5 md:gap-0 flex items-center justify-between relative z-10" >
+        <div className="w-full md:w-1/2 ">
           <button className="play-btn relative w-[92px] h-[92px] bg-[#e8604c] rounded-md cursor-pointer flex items-center justify-center" aria-label="Play video">
           <svg className='w-[28px] h-[28px] fill-white' viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <polygon points="5,3 19,12 5,21"/>
@@ -496,7 +496,7 @@ export default function Home() {
          <p className='text-3xl font-[Reey] main-title py-5 indent-[10px] mt-3'>Are you ready to travel?</p>
          <h2 className='text-5xl text-white font-bold '>Tevily is a World Leading Online Tour Booking Platform</h2>
         </div>
-        <div className="w-1/2 grid grid-cols-2 items-stretch gap-2 max-w-[460px] mx-auto  ">
+        <div className="w-full md:w-1/2 grid grid-cols-2 items-stretch gap-2 max-w-[460px] mx-auto  ">
       
        <Link className="group basis-1/2 items-center flex flex-col justify-center relative overflow-hidden z-10 border border-[#ffffff33] p-4 rounded-md
         after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full
@@ -574,11 +574,11 @@ export default function Home() {
 </section>
 <section className="py-20 bg-no-repeat bg-size-cover w-full h-full bg-[#e8604c]" style={ { backgroundImage: `url(${OurpartnerBanner})` }}>
   <div className="container">
-    <div className="flex gap-10 justify-between">
+    <div className="flex-col md:flex-row flex gap-10 justify-between">
       <div className="">
         <h2 className='text-5xl text-white font-bold whitespace-nowrap'>Our Partners</h2>
       </div>
-      <div className="flex items-center justify-around gap-8 w-full max-w-[1200px]">
+      <div className=" overflow-x-auto md:overflow-hidden flex items-center justify-around gap-8 w-full max-w-[1200px]">
         {Ourpartners.map((partner) => (
           <div className="w-[100px] h-[70px]" key={partner.id}>
             <img className='w-full h-full object-contain' src={partner.logo} alt="" />
@@ -594,7 +594,7 @@ export default function Home() {
       <h4 className='text-xl indent-3 main-title'>Testimonials & reviews</h4>
       <h2 className='text-5xl font-bold text-[#313041]'>What They’re Saying</h2>
     </div>
-     <div className="flex gap-5 items-stretch">
+     <div className="grid grid-cols-1 sm:grid-cols-2 md:flex-row md:flex gap-5 items-stretch">
       { tesimonials.map((testimonial) => (
         <div className="" key={testimonial.id}>
            <div className="h-[230px] w-[230px] rounded-full overflow-hidden mx-auto">
@@ -611,11 +611,11 @@ export default function Home() {
      </div>
   </div>
 </section>
-<section className='py-20 w-full h-full bg-cover bg-no-repeat bg-[#FAF5EE] pt-[300px] -mt-[220px]' style={{ backgroundImage: `url(${GalleryBanner})` }}>
+<section className='py-12 sm:py-20 w-full h-full bg-cover bg-no-repeat bg-[#FAF5EE] pt-[200px] sm:pt-[300px] -mt-[220px]' style={{ backgroundImage: `url(${GalleryBanner})` }}>
    <div className="container">
-     <div className="flex items-stretch gap-5">
+     <div className="grid grid-cols-1 sm:grid-cols-2  md:flex items-stretch gap-5">
       { GalleryCards.map((Gcard)=> (
-       <div className="w-1/2" key={Gcard.id}>
+       <div className="w-full md:w-1/2" key={Gcard.id}>
          <div className="h-[250px] w-full overflow-hidden rounded-md relative">
           <Link to={Gcard.link}>
           <img className='w-full h-full object-cover rounded-md' src={Gcard.image} alt={Gcard.title} />
@@ -631,17 +631,17 @@ export default function Home() {
    </div>
 </section>
 <section className='py-8'>
-   <div className="flex items-stretch">
-    <div className="w-1/2">
-       <img className='w-full h-[600px] min-h-full object-cover relative z-20' src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=800&q=80" alt="Infinity pool with mountain view at sunset"/>
+   <div className="flex-col md:flex-row flex items-stretch">
+    <div className="w-full md:w-1/2">
+       <img className='h-[400px] w-full sm:h-[600px] min-h-full object-cover relative z-20' src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=800&q=80" alt="Infinity pool with mountain view at sunset"/>
     </div>
-    <div className="w-1/2 bg-no-repeat bg-contain bg-center h-auto  bg-[#313041] py-10 px-20 flex justify-start items-center relative after:absolute after:content-[''] after:top-[100px] after:bottom-[100px] after:left-[-3px] after:w-[12px]  after:bg-[#e85d3e] after:rounded-e-lg after:z-10" style={{ backgroundImage: `url(${BenifitBanner})`}}>
+    <div className="w-full md:w-1/2 bg-no-repeat bg-contain bg-center h-auto  bg-[#313041] py-10 px-8 sm:px-20  flex justify-start items-center relative after:absolute after:content-[''] after:top-[100px] after:bottom-[100px] after:left-[-3px] after:w-[12px]  after:bg-[#e85d3e] after:rounded-e-lg after:z-10" style={{ backgroundImage: `url(${BenifitBanner})`}}>
     <div className='max-w-[720px]'>
       <h4 className='main-title text-xl font-normal'>Our benefit lists</h4>
       <h2 className='text-5xl text-white font-bold pb-4 pt-3'>Why Choose Dhauladhar Hikers</h2>
       <p className='text-base text-[#A9A8B6] max-w-[420px]'>There are many variations of passages of Lorem Ipsum is simply free text available in the market for you, but the majority have suffered alteration in some form.</p>
    
-    <div className="grid grid-cols-2 items-stretch gap-6 mt-9">
+    <div className="grid grid-cols-1  sm:grid-cols-2 items-stretch gap-6 mt-9">
       <div className="flex gap-4 items-start">
         <p>
         <svg className="w-[52px] h-[52px]" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -727,7 +727,7 @@ export default function Home() {
 
       </div>
     </div>
-    <div className="flex items-stretch gap-10 ">
+    <div className=" grid  grid-cols-1 sm:grid-cols-2 md:flex items-stretch gap-10 ">
       { articles.map((article) => (
         <div className="border border-[#e8e8e8] rounded-md overflow-hidden" key={article.id}>
           <div className="relative">
@@ -762,7 +762,7 @@ export default function Home() {
 
 <section className="pt-20 bg-[#f5ede4] bg-no-repeat bg-cover bg-center w-full h-full " style={{backgroundImage:`url(${MemberBanner})` }}>
   <div className="container">
-    <div className="flex justify-center gap-10">
+    <div className=" flex-col md:flex-row flex justify-center gap-10">
       <div className="w-full max-w-[600px]">
         <div className="p-2 flex flex-col gap-3  justify-center h-full">
           <h4 className='text-xl main-title indent-2'>Join to us</h4>

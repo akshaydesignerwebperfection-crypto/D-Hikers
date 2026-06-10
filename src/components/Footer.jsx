@@ -20,7 +20,7 @@ export default function Footer() {
   return (
     <footer className=" bg-[#313041] bg-no-repeat bg-right w-full h-full " style={{ backgroundImage: `url(${FooterBanner})`}} >
        <div className="container">
-        <div className="grid grid-cols-4 items-stretch gap-10 py-20">
+        <div className=" grid-cols-2 grid md:grid-cols-4 items-stretch gap-10 py-20">
           <div className="">
             <Link className='flex items-center gap-1 text-2xl font-bold text-white mb-4' to="/">
               <svg className="h-10 w-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="20" cy="22" rx="16" ry="10" fill="#e8442a" opacity="0.15"></ellipse><path d="M20 4 C10 14 6 22 20 28 C34 22 30 14 20 4Z" fill="#e8442a"></path><path d="M20 4 C24 14 34 18 20 28" fill="#c93820" opacity="0.5"></path><circle cx="20" cy="18" r="5" fill="white"></circle></svg>
@@ -75,9 +75,9 @@ export default function Footer() {
         </div>
        </div>
       <div className="relative after:absolute after:content-[''] after:top-0 after:right-0 after:w-[50%] after:h-full after:bg-white ">
-      <div className="bottom-footer-wrapper -right-[30px]  flex gap-3 items-center justify-between container rounded-l-lg bg-white relative z-20" >
+      <div className=" rounded-none right-[0px] flex-col sm:flex-row bottom-footer-wrapper sm:-right-[30px]  flex gap-3 items-center justify-between container sm:rounded-l-lg bg-white relative z-20" >
         <div className='flex items-center gap-5'>
-        <button onClick={scrollToTop} className="w-[122px] h-[98px] bg-[#e85d3e] rounded-l-lg cursor-pointer flex items-center justify-center">
+        <button onClick={scrollToTop} className=" rounded-none w-[60px]  h-[60px] sm:w-[122px]  sm:h-[98px] bg-[#e85d3e] sm:rounded-l-lg cursor-pointer flex items-center justify-center">
           <svg className='w-[20px] h-[20px] fill-[#fff]' viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg>
           </button>
           <div className="flex gap-3 items-center" >
