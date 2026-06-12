@@ -51,6 +51,7 @@ export default function Header() {
       </div>
 
       <header className="bg-white shadow-sm w-full sticky top-0 z-40">
+        <div className='relative'>
         <div className="container hidden md:flex items-center justify-between py-6">
           <NavLink to="/" className="flex items-center gap-3 text-xl font-semibold text-slate-900">
             <svg className="h-10 w-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="20" cy="22" rx="16" ry="10" fill="#e8442a" opacity="0.15"/><path d="M20 4 C10 14 6 22 20 28 C34 22 30 14 20 4Z" fill="#e8442a"/><path d="M20 4 C24 14 34 18 20 28" fill="#c93820" opacity="0.5"/><circle cx="20" cy="18" r="5" fill="white"/></svg>
@@ -140,36 +141,40 @@ export default function Header() {
             </div>
           </div>
 
-          {searchOpen && (
-            <div className="absolute top-full right-0 w-full bg-white shadow-xl p-4 animate-fade-in border-t border-[#e5e7eb]">
-              <form onSubmit={handleSearch} className="flex gap-2 max-w-[600px] mx-auto">
-                <input
-                  type="text"
-                  placeholder="Search destinations, tours..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="flex-1 border border-[#EBE6DE] rounded-md px-4 py-2 text-base text-[#313041] focus:outline-none focus:border-[#e8604c]"
-                  autoFocus
-                />
-                <button
-                  type="submit"
-                  className="bg-[#e8604c] text-white px-4 py-2 rounded-md hover:bg-[#d1503a]"
-                >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-                  </svg>
-                </button>
-              </form>
+        </div>
+
+        {searchOpen && (
+          <div className="absolute top-full right-0 w-full bg-white shadow-xl p-4 animate-fade-in border-t border-[#e5e7eb]">
+             <div className='relative w-full  max-w-[320px] sm:max-w-[600px] mx-auto'>
+            <form onSubmit={handleSearch} className="flex gap-2 max-w-[600px] mx-auto">
+              <input
+                type="text"
+                placeholder="Search destinations, tours..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="flex-1 border border-[#EBE6DE] rounded-md px-4 py-2 text-base text-[#313041] focus:outline-none focus:border-[#e8604c]"
+                autoFocus
+              />
               <button
-                onClick={() => setSearchOpen(false)}
-                className="absolute top-2 right-2 text-gray-400 hover:text-gray-600"
+                type="submit"
+                className="bg-[#e8604c] text-white px-4 py-2 rounded-md hover:bg-[#d1503a]"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
                 </svg>
               </button>
+            </form>
+            <button
+              onClick={() => setSearchOpen(false)}
+              className=" w-9 h-9 bg-[#f1f1f1] cursor-pointer flex items-center justify-center rounded-md absolute -top-[38px] right-[10px] sm:top-[3px] sm:-right-[50px] text-gray-400 hover:text-gray-600"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/>
+              </svg>
+            </button>
             </div>
-          )}
+          </div>
+        )}
         </div>
       </header>
     </>

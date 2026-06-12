@@ -75,9 +75,9 @@ export default function Footer() {
         </div>
        </div>
       <div className="relative after:absolute after:content-[''] after:top-0 after:right-0 after:w-[50%] after:h-full after:bg-white ">
-      <div className=" rounded-none right-[0px] flex-col sm:flex-row bottom-footer-wrapper sm:-right-[30px]  flex gap-3 items-center justify-between container sm:rounded-l-lg bg-white relative z-20" >
+      <div className=" py-2 sm:py-0 rounded-none right-[0px] flex-col sm:flex-row bottom-footer-wrapper sm:-right-[30px]  flex gap-3 items-center justify-between container sm:rounded-l-lg bg-white relative z-20" >
         <div className='flex items-center gap-5'>
-        <button onClick={scrollToTop} className=" rounded-none w-[60px]  h-[60px] sm:w-[122px]  sm:h-[98px] bg-[#e85d3e] sm:rounded-l-lg cursor-pointer flex items-center justify-center">
+        <button onClick={scrollToTop} className=" rounded-md absolute -top-14 right-2 sm:static  w-[50px]  h-[50px] sm:w-[122px]  sm:h-[98px] bg-[#e85d3e] sm:rounded-l-lg cursor-pointer flex items-center justify-center">
           <svg className='w-[20px] h-[20px] fill-[#fff]' viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg>
           </button>
           <div className="flex gap-3 items-center" >

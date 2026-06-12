@@ -341,7 +341,7 @@ export default function Home() {
       <div className="container">
        <div className="text-center pb-7">
         <span className="main-title text-xl font-['Reey']">Destination lists</span>
-       <h2 className="text-5xl text-[#313041] font-bold">Go Exotic Places</h2>
+       <h2 className="text-4xl sm:text-5xl  text-[#313041] font-bold">Go Exotic Places</h2>
       </div>
        <div className=" grid-cols-1 sm:grid-cols-2 grid md:grid-cols-3 gap-5">
       { blocks.map((block) =>
@@ -365,7 +365,7 @@ export default function Home() {
 
   <section className="pt-12 pb-10">
       <div className='container'>
-        <div className=" flex-col md:flex-row flex justify-between items-stretch gap-12 max-w-[1080px] mx-auto">
+        <div className=" flex-col lg:flex-row flex justify-between items-stretch gap-12 max-w-[1080px] mx-auto">
       <div className="flex-auto  relative sm:flex-[0_0_480px] h-[420px]">
       <div className="bg-[#e8e8e8] w-full h-[400px] sm:h-[440px] sm:w-[440px] absolute top-1/2 left-1/2 inset-0 -translate-x-1/2 -translate-y-1/2 rounded-[62%_38%_55%_45%/_48%_60%_40%_52%] "></div>
 
@@ -374,8 +374,8 @@ export default function Home() {
         alt="Eiffel Tower Paris"/>
 
       <div className="absolute top-15 right-10 flex flex-col justify-center items-center">
-        <span className="text-6xl main-title font-['Reey']">30%</span>
-        <span className="font-bold text-5xl text-[#313041]">Discount</span>
+        <span className="text-5xl sm:text-6xl main-title font-['Reey']">30%</span>
+        <span className="font-bold text-4xl  sm:text-5xl text-[#313041]">Discount</span>
       </div>
 
       <div className="absolute bottom-20 left-0 flex flex-col items-center bg-white p-3 rounded-md shadow-md">
@@ -385,7 +385,7 @@ export default function Home() {
     </div>
     <div className="flex-1">
       <span className="main-title text-xl font-['Reey'] ident-2 main-title indent-[15px] block pb-3">Get to know us</span>
-      <h2 className="text-5xl font-bold text-[#313041]">Plan Your Trip with<br/>Trevily</h2>
+      <h2 className="text-4xl sm:text-5xl font-bold text-[#313041]">Plan Your Trip with<br/>Trevily</h2>
       <p className="py-5 text-base text-gray">
         There are many variations of passages of available but the majority
         have suffered alteration in some form, by injected hum randomised
@@ -420,9 +420,9 @@ export default function Home() {
      <div className="container">
       <div className="text-center pb-6">
         <h5 className='text-xl main-title font-[Reey]'>Featured tours</h5>
-        <h2 className='text-5xl text-[#333] font-bold'>Most Popular Tours</h2>
+        <h2 className=' text-4xl sm:text-5xl text-[#333] font-bold'>Most Popular Tours</h2>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:flex-row md:flex gap-4 items-stretch">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:flex-row md:flex gap-4 items-stretch">
         {TourCards.map((tour) => (
           <div className=" w-full md:w-1/2 shadow-lg rounded-[12px] overflow-hidden" key={tour.id}>
               <div className="">
@@ -494,7 +494,7 @@ export default function Home() {
           </svg>
         </button>
          <p className='text-3xl font-[Reey] main-title py-5 indent-[10px] mt-3'>Are you ready to travel?</p>
-         <h2 className='text-5xl text-white font-bold '>Tevily is a World Leading Online Tour Booking Platform</h2>
+         <h2 className='text-4xl sm:text-5xl text-white font-bold '>Tevily is a World Leading Online Tour Booking Platform</h2>
         </div>
         <div className="w-full md:w-1/2 grid grid-cols-2 items-stretch gap-2 max-w-[460px] mx-auto  ">
       
@@ -576,7 +576,7 @@ export default function Home() {
   <div className="container">
     <div className="flex-col md:flex-row flex gap-10 justify-between">
       <div className="">
-        <h2 className='text-5xl text-white font-bold whitespace-nowrap'>Our Partners</h2>
+        <h2 className='text-4xl sm:text-5xl text-white font-bold whitespace-nowrap'>Our Partners</h2>
       </div>
       <div className=" overflow-x-auto md:overflow-hidden flex items-center justify-around gap-8 w-full max-w-[1200px]">
         {Ourpartners.map((partner) => (
@@ -592,7 +592,7 @@ export default function Home() {
   <div className="container">
     <div className="pb-6 text-center">
       <h4 className='text-xl indent-3 main-title'>Testimonials & reviews</h4>
-      <h2 className='text-5xl font-bold text-[#313041]'>What They’re Saying</h2>
+      <h2 className='text-4xl sm:text-5xl font-bold text-[#313041]'>What They’re Saying</h2>
     </div>
      <div className="grid grid-cols-1 sm:grid-cols-2 md:flex-row md:flex gap-5 items-stretch">
       { tesimonials.map((testimonial) => (
@@ -638,7 +638,7 @@ export default function Home() {
     <div className="w-full md:w-1/2 bg-no-repeat bg-contain bg-center h-auto  bg-[#313041] py-10 px-8 sm:px-20  flex justify-start items-center relative after:absolute after:content-[''] after:top-[100px] after:bottom-[100px] after:left-[-3px] after:w-[12px]  after:bg-[#e85d3e] after:rounded-e-lg after:z-10" style={{ backgroundImage: `url(${BenifitBanner})`}}>
     <div className='max-w-[720px]'>
       <h4 className='main-title text-xl font-normal'>Our benefit lists</h4>
-      <h2 className='text-5xl text-white font-bold pb-4 pt-3'>Why Choose Dhauladhar Hikers</h2>
+      <h2 className='text-4xl sm:text-5xl text-white font-bold pb-4 pt-3'>Why Choose Dhauladhar Hikers</h2>
       <p className='text-base text-[#A9A8B6] max-w-[420px]'>There are many variations of passages of Lorem Ipsum is simply free text available in the market for you, but the majority have suffered alteration in some form.</p>
    
     <div className="grid grid-cols-1  sm:grid-cols-2 items-stretch gap-6 mt-9">
@@ -720,7 +720,7 @@ export default function Home() {
     <div className="pb-10 flex justify-between items-end">
       <div className="">
       <h4 className='text-xl main-title'>From the blog post</h4>
-      <h2 className='text-5xl font-bold text-[#313041]'>News & Articles</h2>
+      <h2 className='text-4xl sm:text-5xl font-bold text-[#313041]'>News & Articles</h2>
       </div>
       <div>
         <a className='py-4 px-8 bg-[#e8604c] text-white uppercase text-sm rounded-md block hover:bg-[#d1503d  ] transition duration-300' href="/">Views All Posts</a>
@@ -766,7 +766,7 @@ export default function Home() {
       <div className="w-full max-w-[600px]">
         <div className="p-2 flex flex-col gap-3  justify-center h-full">
           <h4 className='text-xl main-title indent-2'>Join to us</h4>
-          <h2 className='text-5xl font-bold text-[#313041]'>Not a Member Yet?</h2>
+          <h2 className='text-4xl sm:text-5xl font-bold text-[#313041]'>Not a Member Yet?</h2>
           <p className='py-3 text-base text-[#757783] max-w-[400px]'>Join us! Our members can access savings of up to 50% and earn Trip Coins while booking.</p>
           <div className="flex">
             <button className="bg-[#FC3C3C] text-white py-3 px-6 rounded-md text-sm tracking-[2px] font-bold uppercase flex items-center gap-1">
