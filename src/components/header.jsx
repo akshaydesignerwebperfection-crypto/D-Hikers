@@ -52,7 +52,7 @@ export default function Header() {
 
       <header className="bg-white shadow-sm w-full sticky top-0 z-40">
         <div className='relative'>
-        <div className="container hidden md:flex items-center justify-between py-6">
+        <div className="container hidden lg:flex items-center justify-between py-6">
           <NavLink to="/" className="flex items-center gap-3 text-xl font-semibold text-slate-900">
             <svg className="h-10 w-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="20" cy="22" rx="16" ry="10" fill="#e8442a" opacity="0.15"/><path d="M20 4 C10 14 6 22 20 28 C34 22 30 14 20 4Z" fill="#e8442a"/><path d="M20 4 C24 14 34 18 20 28" fill="#c93820" opacity="0.5"/><circle cx="20" cy="18" r="5" fill="white"/></svg>
             D Hikers
@@ -81,7 +81,7 @@ export default function Header() {
           </div>
         </div>
 
-        <div className="container md:hidden flex items-center justify-between py-4 relative">
+        <div className="container lg:hidden flex items-center justify-between py-4 relative">
           <button
             className="toggle-btn cursor-pointer"
             onClick={() => setMenuOpen(true)}

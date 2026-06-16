@@ -80,16 +80,16 @@ export default function About() {
     </section>
      <section className='py-16'>
       <div className="container">
-        <div className="flex justify-between items-stretch gap-10">
-          <div className="w-1/2">
+        <div className="flex-col flex md:flex-row justify-between items-stretch gap-10">
+          <div className=" w-full md:w-1/2">
             <div className="relative py-[30%] rounded-lg overflow-hidden h-full">
               <img className='absolute top-0 left-0 w-full h-full object-cover' src={AboutBanner} alt="" />
             </div>
           </div>
-          <div className="w-1/2">
+          <div className=" w-full md:w-1/2">
            <div className=" p-2">
             <h4 className='main-title text-xl indent-2'>Learn about us</h4>
-            <h2 className='text-5xl text-[#313041] font-bold'>Dare to Explore with Tevily Agency</h2>
+            <h2 className=' text-4xl sm:text-5xl text-[#313041] font-bold'>Dare to Explore with Tevily Agency</h2>
             <p className='text-base text-[#757783] pt-4'>We are trusted by our clients and have a reputation for the best services in the field. Lorem ipsum is simply free text dolor sit amett consectetur adipiscing elit. It is a long established fact that a reader will be distracted by the readable content of a page.</p>
              <div className="mt-4">
               <div className="flex justify-between items-center">
@@ -120,13 +120,13 @@ export default function About() {
      </section>
        <section className='py-24 bg-[#e8604c] w-full h-full bg-no-repeat ' style={{ backgroundImage:`url(${TourBanner})`}}>
         <div className="container">
-          <div className="flex items-center justify-between">
-            <div>
+          <div className=" flex-col md:flex-row flex items-center justify-between">
+            <div className='text-center md:text-left'>
               <h4 className='text-xl text-white indent-1 '>Plan your trip with us</h4>
-            <h2 className='text-5xl font-bold text-white'>Ready for an unforgetable tour?</h2>
+            <h2 className='text-4xl sm:text-5xl font-bold text-white'>Ready for an unforgetable tour?</h2>
             </div>
-            <div className="">
-              <a href="#" className='py-4 px-8 bg-[#313041] rounded-md text-white  text-sm'> Book Tour Now</a>
+            <div className="pt-2 md:pt-0">
+              <a href="#" className=' block  py-4 px-8 bg-[#313041] rounded-md text-white  text-sm'> Book Tour Now</a>
             </div>
           </div>
         </div>
@@ -135,9 +135,9 @@ export default function About() {
          <div className="container">
            <div className="pb-7 text-center">
              <h4 className='text-xl indent-3 main-title'>Testimonials & reviews</h4>
-             <h2 className='text-5xl font-bold text-[#313041]'>What They’re Saying</h2>
+             <h2 className='text-4xl sm:text-5xl font-bold text-[#313041]'>What They’re Saying</h2>
            </div>
-            <div className="flex gap-5 items-stretch">
+            <div className=" grid sm:grid-cols-2 lg:flex-row lg:flex gap-5 items-stretch">
              { tesimonials.map((testimonial) => (
                <div className="" key={testimonial.id}>
                   <div className="h-[230px] w-[230px] rounded-full overflow-hidden mx-auto">
@@ -165,28 +165,28 @@ export default function About() {
               </svg>
             </button>
              <p className='text-3xl font-[Reey] main-title py-5 indent-[10px] mt-3'>Are you ready to travel?</p>
-             <h2 className='text-6xl text-white font-bold text-center '>Tevily is a World Leading Online Tour Booking Platform</h2>
+             <h2 className='text-5xl md:text-6xl text-white font-bold text-center '>Tevily is a World Leading Online Tour Booking Platform</h2>
             </div>
           </div>
         </div>
     </section>
          <section className='py-0'>
         <div className="container">
-           <div className="grid grid-cols-4 gap-4 p-7 shadow-md rounded-md bg-white top-[-65px] relative">
-            <div className="border-r  borer-[#ebe6de] text-center">
-              <h4 className='main-title text-5xl font-normal' >400</h4>
+           <div className=" overflow-x-auto flex md:overflow-hidden md:grid grid-cols-4 gap-4 p-7 shadow-md rounded-md bg-white top-[-65px] relative">
+            <div className=" flex-[0_0_180px] border-r  borer-[#ebe6de] text-center">
+              <h4 className='text-4xl main-title md:text-5xl font-normal' >400</h4>
               <p className='text-base text-[#757783]'>Total Donations </p>
             </div>
-              <div className="border-r borer-[#ebe6de] text-center">
-              <h4 className='main-title text-5xl font-normal' >40</h4>
+              <div className=" flex-[0_0_180px] border-r borer-[#ebe6de] text-center">
+              <h4 className=' text-4xl main-title md:text-5xl font-normal' >40</h4>
               <p className='text-base text-[#757783]'>Campaigns Closed </p>
             </div>
-              <div className="border-r borer-[#ebe6de] text-center">
-              <h4 className='main-title text-5xl font-normal' >1400</h4>
+              <div className=" flex-[0_0_180px]] border-r borer-[#ebe6de] text-center">
+              <h4 className='main-title text-4xl md:text-5xl font-normal' >1400</h4>
               <p className='text-base text-[#757783]'>Happy People </p>
             </div>
-              <div className="text-center">
-              <h4 className='main-title text-5xl font-normal' >80</h4>
+              <div className="flex-[0_0_180px] text-center">
+              <h4 className='main-title text-4xl md:text-5xl font-normal' >80</h4>
               <p className='text-base text-[#757783]'> Our Volunteers </p>
             </div>
            </div>
@@ -194,7 +194,7 @@ export default function About() {
        </section>
        <section className='pb-16'>
         <div className="container">
-          <div className="grid grid-cols-5 gap-8 items-stretch">
+          <div className="grid grid-cols-2 gap-4  md:grid-cols-5 md:gap-8 items-stretch">
             {TeamMember.map((Teamblock) =>(
               <div className="p1 group" key={Teamblock.id} >
                 <div className="relative py-[70%] rounded-md overflow-hidden">

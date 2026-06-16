@@ -120,7 +120,7 @@ export default function News() {
 
       <section className='py-16'>
         <div className="container">
-          <div className="grid grid-cols-3 items-stretch gap-8 ">
+          <div className="grid gap-4  grid-cols-1  sm:grid-cols-2  lg:grid-cols-3 items-stretch sm:gap-8 ">
             { currentArticles.map((article) => (
               <div className="border border-[#e8e8e8] rounded-md overflow-hidden" key={article.id}>
                 <div className="relative">

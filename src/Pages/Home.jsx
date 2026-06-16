@@ -422,9 +422,9 @@ export default function Home() {
         <h5 className='text-xl main-title font-[Reey]'>Featured tours</h5>
         <h2 className=' text-4xl sm:text-5xl text-[#333] font-bold'>Most Popular Tours</h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:flex-row md:flex gap-4 items-stretch">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:flex-row lg:flex gap-4 items-stretch">
         {TourCards.map((tour) => (
-          <div className=" w-full md:w-1/2 shadow-lg rounded-[12px] overflow-hidden" key={tour.id}>
+          <div className=" w-full lg:w-1/2 shadow-lg rounded-[12px] overflow-hidden" key={tour.id}>
               <div className="">
                 <img src={tour.image} alt={tour.title} />
               </div>
@@ -594,7 +594,7 @@ export default function Home() {
       <h4 className='text-xl indent-3 main-title'>Testimonials & reviews</h4>
       <h2 className='text-4xl sm:text-5xl font-bold text-[#313041]'>What They’re Saying</h2>
     </div>
-     <div className="grid grid-cols-1 sm:grid-cols-2 md:flex-row md:flex gap-5 items-stretch">
+     <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex-row lg:flex gap-5 items-stretch">
       { tesimonials.map((testimonial) => (
         <div className="" key={testimonial.id}>
            <div className="h-[230px] w-[230px] rounded-full overflow-hidden mx-auto">
@@ -631,11 +631,11 @@ export default function Home() {
    </div>
 </section>
 <section className='py-8'>
-   <div className="flex-col md:flex-row flex items-stretch">
-    <div className="w-full md:w-1/2">
+   <div className="flex-col lg:flex-row flex items-stretch">
+    <div className="w-full lg:w-1/2">
        <img className='h-[400px] w-full sm:h-[600px] min-h-full object-cover relative z-20' src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=800&q=80" alt="Infinity pool with mountain view at sunset"/>
     </div>
-    <div className="w-full md:w-1/2 bg-no-repeat bg-contain bg-center h-auto  bg-[#313041] py-10 px-8 sm:px-20  flex justify-start items-center relative after:absolute after:content-[''] after:top-[100px] after:bottom-[100px] after:left-[-3px] after:w-[12px]  after:bg-[#e85d3e] after:rounded-e-lg after:z-10" style={{ backgroundImage: `url(${BenifitBanner})`}}>
+    <div className="w-full lg:w-1/2 bg-no-repeat bg-contain bg-center h-auto  bg-[#313041] py-10 px-8 sm:px-20  flex justify-start items-center relative after:absolute after:content-[''] after:top-[100px] after:bottom-[100px] after:left-[-3px] after:w-[12px]  after:bg-[#e85d3e] after:rounded-e-lg after:z-10" style={{ backgroundImage: `url(${BenifitBanner})`}}>
     <div className='max-w-[720px]'>
       <h4 className='main-title text-xl font-normal'>Our benefit lists</h4>
       <h2 className='text-4xl sm:text-5xl text-white font-bold pb-4 pt-3'>Why Choose Dhauladhar Hikers</h2>

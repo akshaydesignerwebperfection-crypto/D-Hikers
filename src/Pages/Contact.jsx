@@ -49,10 +49,10 @@ export default function Contact() {
       </section>
       <section className='py-16'>
         <div className="container">
-          <div className="flex gap-5 justify-between items-stretch">
-            <div className="w-1/3">
+          <div className=" flex-col md:flex-row flex gap-5 justify-between items-stretch">
+            <div className=" w-full md:w-1/3">
               <h4 className='text-xl main-title font-normal pb-2 indent-2'>Talk with our team</h4>
-              <h2 className='text-5xl font-bold text-[#313041]'>Any Question? Feel Free to Contact</h2>
+              <h2 className='text-4xl sm:text-5xl font-bold text-[#313041]'>Any Question? Feel Free to Contact</h2>
               <p className='text-base text-[#757783] py-4'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod tincidunt.</p>
               <div className="flex gap-3 items-center pt-2">
                 <a className="group w-[46px] h-[46px] rounded-full border border-[#FAF5EE] bg-[#FAF5EE] flex items-center justify-center hover:bg-[#e8604c] hover:border-[#e8604c] duration-500" href="#">
@@ -79,7 +79,7 @@ export default function Contact() {
                 </a>
               </div>
             </div>
-            <div className="w-[60%]">
+            <div className="w-full md:w-[60%]">
               <div className="contact-form-block">
                 <form onSubmit={handleSubmit}>
                   <div className="flex gap-3 items-center pb-4">
@@ -116,7 +116,7 @@ export default function Contact() {
       </section>
       <section className='pb-16'>
         <div className="container">
-          <div className="grid items-center grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 items-center lg:grid-cols-3 gap-5">
              <div className="flex items-center justify-center border border-[#EBE6DE] rounded-md p-6  gap-3 ">
               <span className="w-[48px] h-[48px] bg-[#FAF5EE] rounded-full flex items-center justify-center">
               <svg className="w-[16px] h-[16px]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>

@@ -128,11 +128,11 @@ export default function MoroccoTourDetail(){
         </div>
     </div>
     </section>
-    <section className='bg-[#faf5ee] py-16'>
+    <section className='bg-[#faf5ee] py-14 sm:py-16'>
         <div className="container">
-            <div className="flex items-center gap-5 justify-between">
+            <div className=" block flex-col md:flex-row sm:flex items-center gap-5 justify-between">
                 <div className="">
-                    <h2 className='text-5xl text-[#313041] font-bold'>Morocco</h2>
+                    <h2 className='text-4xl sm:text-5xl text-[#313041] font-bold'>Morocco</h2>
                     <p className='text-base text-[#757783] flex items-center gap-1'> 
                      <span className='w-[15px] h-[15px]'>
                       <svg className="stroke-[#e8604c] w-[15px] h-[15px] " width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
@@ -140,8 +140,8 @@ export default function MoroccoTourDetail(){
                      Bryce Canyon Central Park, USA
                      </p>
                 </div>
-                <div className='flex gap-5'>
-                    <div className="flex items-center gap-3">
+                <div className=' pt-5 overflow-x-auto sm:pt-0 sm:overflow-hidden  flex gap-5'>
+                    <div className=" flex-[0_0_150px] sm:flex-0 flex items-center gap-3">
                         <p className=''>
                          <svg className="stroke-[#e8604c] fill-none " viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"width="36" height="36" ><rect x="5" y="2" width="16" height="22" rx="2"/>  <line x1="9" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="15" y2="11"/><circle cx="12" cy="16" r="1.2" fill="#e05a3a" stroke="none"/></svg>
                         </p>
@@ -150,7 +150,7 @@ export default function MoroccoTourDetail(){
                             <span className='text-[18px] text-[#313041] font-medium'>$59.00</span>
                         </p>
                     </div>
-                    <div className="flex items-center gap-3">
+                    <div className=" flex-[0_0_150px] sm:flex-0 flex items-center gap-3">
                         <p className=''>
                         <svg className="stroke-[#e8604c]" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
                         </p>
@@ -159,7 +159,7 @@ export default function MoroccoTourDetail(){
                             <span className='text-[18px] text-[#313041] font-medium'>10 days</span>
                         </p>
                     </div>
-                    <div className="flex items-center gap-3">
+                    <div className=" flex-[0_0_150px] sm:flex-0 flex items-center gap-3">
                         <p className=''>
                           <svg className="stroke-[#e8604c] fill-[#faf5ee]" width="36" height="36"  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/> </svg>
                         </p>
@@ -174,8 +174,8 @@ export default function MoroccoTourDetail(){
     </section>
     <section className='py-5 border-b border-[#EBE6DE]'>
         <div className="container">
-            <div className="flex justify-between items-center ">
-                <div className="flex items-center gap-3">
+            <div className=" overflow-x-auto md:overflow-hidden flex justify-between items-center ">
+                <div className=" flex-[0_0_250px] md:flex-0 flex items-center gap-3">
                     <p className='text-[#f5a42b] text-xl'>★★★★★</p>
                     <p className='text-base text-[#757783]'>4.33 by 3 <span >reviews</span></p>
                 </div>
@@ -200,8 +200,8 @@ export default function MoroccoTourDetail(){
     </section>
    <section className='py-8'>
      <div className="container">
-     <div className="flex items-stretch gap-4 justify-between ">
-      <div className="w-full pr-4">
+     <div className=" flex-col lg:flex-row flex items-stretch gap-4 justify-between ">
+      <div className="w-full lg:w-[74%] pr-4 ">
         <div className="">
         <div className="relative rounded-lg overflow-hidden">
        <div className="w-full">
@@ -232,45 +232,57 @@ export default function MoroccoTourDetail(){
     </div>
     <div className="pt-8 border-t border-[#EBE6DE]">
             <h2 className='text-3xl text-[#313041] font-bold'>Tour Amenities</h2>
-          <div class="grid grid-cols-3 gap-5 pt-8">
-          <div class="flex items-center gap-3" >
-              <p class="">
-                <svg class="stroke-[#e8604c] fill-[#e8604c]" width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/> <line x1="1" y1="9" x2="23" y2="9" stroke="#fff" stroke-width="2"/> <rect x="3" y="12" width="4" height="2" rx="0.5" fill="#fff"/>  <rect x="8" y="12" width="3" height="2" rx="0.5" fill="#fff"/></svg>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-5 pt-8">
+          <div className=" flex-col sm:flex-row text-center flex items-center gap-3" >
+              <p className="">
+                <svg className="stroke-[#e8604c] fill-[#e8604c]" width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/> <line x1="1" y1="9" x2="23" y2="9" stroke="#fff" stroke-width="2"/> <rect x="3" y="12" width="4" height="2" rx="0.5" fill="#fff"/>  <rect x="8" y="12" width="3" height="2" rx="0.5" fill="#fff"/></svg>
               </p>
-              <p class="flex flex-col"><span class="text-base text-[#757783]">Accepts Credit Cards</span>
+              <p className=""><span class="text-base text-[#757783]">Accepts Credit Cards</span>
               </p>
             </div>
-            <div class="flex items-center gap-3">
-              <p class="">
-               <svg class="fill-[#e8604c]" width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="1" width="18" height="22" rx="2"/><text x="12" y="16" text-anchor="middle" font-size="12" font-weight="700" fill="#fff" font-family="DM Sans, sans-serif">P</text></svg>
+            <div className=" flex-col sm:flex-row text-center flex items-center gap-3">
+              <p className="">
+               <svg className="fill-[#e8604c]" width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="1" width="18" height="22" rx="2"/><text x="12" y="16" text-anchor="middle" font-size="12" font-weight="700" fill="#fff" font-family="DM Sans, sans-serif">P</text></svg>
               </p>
-                <p class="flex flex-col"><span class="text-base text-[#757783]">Car Parking</span>
+                <p className=""><span className="text-base text-[#757783]">Car Parking</span>
             </p>
              </div>
-             <div class="flex items-center gap-3"><p class="">
-                <svg class="fill-[#e8604c]" width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L9 2 3 8v2l9 12 9-12V8L15 2h-3z"/> <circle cx="9.5" cy="9.5" r="1.5" fill="#fff"/> <line x1="8" y1="14" x2="14" y2="8" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/><circle cx="13.5" cy="13.5" r="1.5" fill="#fff"/></svg>
-                <span class="text-base text-[#757783]">Free Coupons</span>
+             <div className=" flex-col sm:flex-row text-center  flex items-center gap-3">
+              <p className="">
+                <svg className="fill-[#e8604c]" width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L9 2 3 8v2l9 12 9-12V8L15 2h-3z"/> <circle cx="9.5" cy="9.5" r="1.5" fill="#fff"/> <line x1="8" y1="14" x2="14" y2="8" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/><circle cx="13.5" cy="13.5" r="1.5" fill="#fff"/></svg>
+                </p>
+                 <p className="">
+                <span className="text-base text-[#757783]">Free Coupons</span>
              </p>
                 </div>
-            <div class="flex items-center gap-3"><p class="">
-                <svg class="fill-[#e8604c]" width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="7" width="18" height="2.5" rx="1"/><rect x="4" y="9.5" width="2" height="6" rx="1"/><rect x="18" y="9.5" width="2" height="6" rx="1"/> <rect x="1" y="13" width="7" height="2" rx="1"/>
+            <div className=" flex-col sm:flex-row text-center  flex items-center gap-3">
+              <p className="">
+                <svg className="fill-[#e8604c]" width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="7" width="18" height="2.5" rx="1"/><rect x="4" y="9.5" width="2" height="6" rx="1"/><rect x="18" y="9.5" width="2" height="6" rx="1"/> <rect x="1" y="13" width="7" height="2" rx="1"/>
                 <rect x="2" y="15" width="2" height="4" rx="1"/><rect x="5" y="15" width="2" height="4" rx="1"/><rect x="1" y="12" width="2" height="4" rx="1"/>
                 <rect x="16" y="13" width="7" height="2" rx="1"/><rect x="17" y="15" width="2" height="4" rx="1"/><rect x="20" y="15" width="2" height="4" rx="1"/>
                 <rect x="21" y="12" width="2" height="4" rx="1"/> </svg>
+                 </p>
+                  <p className="">
                 <span class="text-base text-[#757783]">Outdoor Seating</span>
              </p>
                 </div>
-                <div class="flex items-center gap-3"><p class="">
-                    <svg class="fill-[#e8604c]" width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <circle cx="12" cy="5" r="3"/><path d="M7 10 Q7 8 12 8 Q17 8 17 10 L18 20 H6 Z"/><rect x="8" y="2" width="8" height="1.2" rx="0.6"/><circle cx="17" cy="14" r="3.5" fill="#c0392b"/><text x="17" y="15.2" text-anchor="middle" font-size="5" font-weight="700" fill="#fff" font-family="DM Sans, sans-serif">$</text> </svg>
-                <span class="text-base text-[#757783]">Smoking Allowed</span>
+                <div className="flex flex-col sm:flex-row text-center items-center gap-3">
+                  <p className="">
+                    <svg className="fill-[#e8604c]" width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <circle cx="12" cy="5" r="3"/><path d="M7 10 Q7 8 12 8 Q17 8 17 10 L18 20 H6 Z"/><rect x="8" y="2" width="8" height="1.2" rx="0.6"/><circle cx="17" cy="14" r="3.5" fill="#c0392b"/><text x="17" y="15.2" text-anchor="middle" font-size="5" font-weight="700" fill="#fff" font-family="DM Sans, sans-serif">$</text> </svg>
+                  </p>
+                   <p className="">
+                <span className="text-base text-[#757783]">Smoking Allowed</span>
              </p>
              </div>
-                <div class="flex items-center gap-3"><p class="">
-                <svg class="fill-[#e8604c]" width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 8.5 C5.5 4.5 18.5 4.5 22.5 8.5" stroke="#e05a3a" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+                <div className="flex flex-col sm:flex-row text-center items-center gap-3">
+                  <p className="">
+                <svg className="fill-[#e8604c]" width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 8.5 C5.5 4.5 18.5 4.5 22.5 8.5" stroke="#e05a3a" stroke-width="2.2" stroke-linecap="round" fill="none"/>
                 <path d="M4.5 11.5 C7 9 17 9 19.5 11.5" stroke="#e05a3a" stroke-width="2.2" stroke-linecap="round" fill="none"/><path d="M7.5 14.5 C9 13 15 13 16.5 14.5" stroke="#e05a3a" stroke-width="2.2" stroke-linecap="round" fill="none"/>
                 <circle cx="12" cy="18" r="1.8"/>
             </svg>  
-              <span class="text-base text-[#757783]">Wireless Internet</span>
+            </p>
+             <p className="">
+              <span className="text-base text-[#757783]">Wireless Internet</span>
             </p>
           </div>
          </div>   
@@ -313,11 +325,11 @@ export default function MoroccoTourDetail(){
             referrerPolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
-        <div className="pt-14">
+        <div className="pt-10 sm:pt-14">
             <h2 className='text-3xl text-[#313041] font-bold'>Related Tours</h2>
-        <div className="flex gap-4 items-stretch pt-8">
+        <div className=" overflow-x-auto lg:overflow-hidden flex gap-4 items-stretch pt-8">
         {TourCards.map((tour) => (
-          <div className="w-1/2 shadow-lg rounded-[12px] overflow-hidden" key={tour.id}>
+          <div className="flex-[0_0_300px] lg:flex-0 w-1/2 shadow-lg rounded-[12px] overflow-hidden" key={tour.id}>
               <div className="">
                 <img src={tour.image} alt={tour.title} />
               </div>
@@ -373,7 +385,7 @@ export default function MoroccoTourDetail(){
         </div>
        </div>
       </div>
-     <div className="w-1/3">
+     <div className=" w-full lg:w-[26%]">
        <div className="">
         <div className="p-6 bg-[#fff] rounded-lg shadow-md border border-[#0000000f]">
             <h5 className='text-xl font-bold text-[#313041] border-b pl-4 border-[#EBE6DE] pb-3 relative after:absolute after:content-[""] after:top-[4px]  after:left-0 after:w-[2px] after:h-[24px] after:bg-[#e8604c]'>Booking Tour</h5>

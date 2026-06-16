@@ -74,9 +74,9 @@ export default function Destination() {
       <div className="container">
        <div className="text-center pb-7">
         <span className="main-title text-xl font-['Reey']">Destination lists</span>
-       <h2 className="text-5xl text-[#313041] font-bold">Go Exotic Places</h2>
+        <h2 className="text-4xl sm:text-5xl text-[#313041] font-bold">Go Exotic Places</h2>
     </div>
-       <div className="grid grid-cols-3 gap-5">
+       <div className=" grid-cols-1 sm:grid-cols-2 grid lg:grid-cols-3 gap-5">
       { blocks.map((block) =>
           (<div className="relative" key={block.id}>
            <img className="rounded-lg w-full h-100 object-cover"
@@ -101,17 +101,17 @@ export default function Destination() {
             after:bg-[linear-gradient(to_right,#000000e8_0%,rgb(4_8_26/68%)_55%,rgb(0_0_0/85%)_100%)]"
             style={{ backgroundImage: `url(${BookingBanner})` }}>  
           <div className="container">
-              <div className="flex items-center justify-between relative z-10" >
-                <div className="w-1/2">
+              <div className="flex-col gap-5 md:gap-0 md:flex-row flex items-center justify-between relative z-10" >
+                <div className=" w-full md:w-1/2">
                   <button className="play-btn relative w-[92px] h-[92px] bg-[#e8604c] rounded-md cursor-pointer flex items-center justify-center" aria-label="Play video">
                   <svg className='w-[28px] h-[28px] fill-white' viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <polygon points="5,3 19,12 5,21"/>
                   </svg>
                 </button>
                  <p className='text-3xl font-[Reey] main-title py-5 indent-[10px] mt-3'>Are you ready to travel?</p>
-                 <h2 className='text-5xl text-white font-bold '>Tevily is a World Leading Online Tour Booking Platform</h2>
+                 <h2 className=' text-4xl sm:text-5xl text-white font-bold '>Tevily is a World Leading Online Tour Booking Platform</h2>
                 </div>
-                <div className="w-1/2 grid grid-cols-2 items-stretch gap-2 max-w-[460px] mx-auto  ">
+                <div className="w-full md:w-1/2 grid grid-cols-2 items-stretch gap-2 max-w-[460px] mx-auto  ">
               
                <a className="group basis-1/2 items-center flex flex-col justify-center relative overflow-hidden z-10 border border-[#ffffff33] p-4 rounded-md
                 after:absolute after:content-[''] after:top-0 after:left-0 after:w-full after:h-full
@@ -190,11 +190,11 @@ export default function Destination() {
 
             <section className="pt-20 bg-[#f5ede4] bg-no-repeat bg-cover bg-center w-full h-full " style={{backgroundImage:`url(${MemberBanner})` }}>
           <div className="container">
-            <div className="flex justify-center gap-10">
+            <div className=" flex-col md:flex-row flex justify-center gap-10">
               <div className="w-full max-w-[600px]">
                 <div className="p-2 flex flex-col gap-3  justify-center h-full">
                   <h4 className='text-xl main-title indent-2'>Join to us</h4>
-                  <h2 className='text-5xl font-bold text-[#313041]'>Not a Member Yet?</h2>
+                  <h2 className=' text-4xl sm:text-5xl font-bold text-[#313041]'>Not a Member Yet?</h2>
                   <p className='py-3 text-base text-[#757783] max-w-[400px]'>Join us! Our members can access savings of up to 50% and earn Trip Coins while booking.</p>
                   <div className="flex">
                     <button className="bg-[#FC3C3C] text-white py-3 px-6 rounded-md text-sm tracking-[2px] font-bold uppercase flex items-center gap-1">

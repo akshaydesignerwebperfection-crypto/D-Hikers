@@ -20,7 +20,7 @@ export default function Footer() {
   return (
     <footer className=" bg-[#313041] bg-no-repeat bg-right w-full h-full " style={{ backgroundImage: `url(${FooterBanner})`}} >
        <div className="container">
-        <div className=" grid-cols-2 grid md:grid-cols-4 items-stretch gap-10 py-20">
+        <div className=" grid-cols-1 sm:grid-cols-2 grid md:grid-cols-4 items-stretch gap-10 py-16 sm:py-20">
           <div className="">
             <Link className='flex items-center gap-1 text-2xl font-bold text-white mb-4' to="/">
               <svg className="h-10 w-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="20" cy="22" rx="16" ry="10" fill="#e8442a" opacity="0.15"></ellipse><path d="M20 4 C10 14 6 22 20 28 C34 22 30 14 20 4Z" fill="#e8442a"></path><path d="M20 4 C24 14 34 18 20 28" fill="#c93820" opacity="0.5"></path><circle cx="20" cy="18" r="5" fill="white"></circle></svg>
@@ -34,7 +34,7 @@ export default function Footer() {
               <div className="flex items-center gap-2 text-base text-[#a9a8b6]"><svg className="w-[16px] h-[16px] fill-[#e85d3e]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>66 Broklyn Street New York, USA</div>
             </div>
           </div>
-          <div className="px-8">
+          <div className="p-0 sm:px-8">
             <p className='text-2xl text-white font-bold pb-4'>Company</p>
             <ul className="flex flex-col gap-2">
               <li><Link className="text-base text-[#a9a8b6] hover:text-[#e85d3e]" to="/about">About Us</Link></li>
@@ -75,7 +75,7 @@ export default function Footer() {
         </div>
        </div>
       <div className="relative after:absolute after:content-[''] after:top-0 after:right-0 after:w-[50%] after:h-full after:bg-white ">
-      <div className=" py-2 sm:py-0 rounded-none right-[0px] flex-col sm:flex-row bottom-footer-wrapper sm:-right-[30px]  flex gap-3 items-center justify-between container sm:rounded-l-lg bg-white relative z-20" >
+      <div className=" py-2 sm:py-0 rounded-none right-[0px] flex-col sm:flex-row bottom-footer-wrapper lg:-right-[30px]  flex gap-3 items-center justify-between container sm:rounded-l-lg bg-white relative z-20" >
         <div className='flex items-center gap-5'>
         <button onClick={scrollToTop} className=" rounded-md absolute -top-14 right-2 sm:static  w-[50px]  h-[50px] sm:w-[122px]  sm:h-[98px] bg-[#e85d3e] sm:rounded-l-lg cursor-pointer flex items-center justify-center">
           <svg className='w-[20px] h-[20px] fill-[#fff]' viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"></polyline></svg>
