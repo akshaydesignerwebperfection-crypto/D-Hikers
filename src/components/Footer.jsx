@@ -26,7 +26,7 @@ export default function Footer() {
               <svg className="h-10 w-10" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="20" cy="22" rx="16" ry="10" fill="#e8442a" opacity="0.15"></ellipse><path d="M20 4 C10 14 6 22 20 28 C34 22 30 14 20 4Z" fill="#e8442a"></path><path d="M20 4 C24 14 34 18 20 28" fill="#c93820" opacity="0.5"></path><circle cx="20" cy="18" r="5" fill="white"></circle></svg>
                D Hikers
             </Link>
-            <p className='text-base text-[#a9a8b6]'>Welcome to our Trip and Tour Agency. Lorem simply text amet cing elit.</p>
+            <p className='text-base text-[#a9a8b6]'>Welcome to our Trip and Tour Agency. Lorem simply text amet cing elit vishal.</p>
             <hr className='border border-[#FFFFFF33] my-4' />
             <div className="flex flex-col gap-3">
               <a className="flex items-center gap-2 text-base text-[#a9a8b6]" href="tel:78075 28705" ><svg className="w-[16px] h-[16px] fill-[#e85d3e]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"></path></svg>78075 28705</a>
