@@ -198,7 +198,7 @@ export default function MoroccoTourDetail(){
             </div>
         </div>
     </section>
-   <section className='py-8'>
+   <section className='py-8 '>
      <div className="container">
      <div className=" flex-col lg:flex-row flex items-stretch gap-4 justify-between ">
       <div className="w-full lg:w-[74%] pr-4 ">
@@ -327,7 +327,7 @@ export default function MoroccoTourDetail(){
         </div>
         <div className="pt-10 sm:pt-14">
             <h2 className='text-3xl text-[#313041] font-bold'>Related Tours</h2>
-        <div className=" overflow-x-auto lg:overflow-hidden flex gap-4 items-stretch pt-8">
+        <div className=" overflow-x-auto lg:overflow-hidden flex gap-4 items-stretch pt-8 pb-4">
         {TourCards.map((tour) => (
           <div className="flex-[0_0_300px] lg:flex-0 w-1/2 shadow-lg rounded-[12px] overflow-hidden" key={tour.id}>
               <div className="">
