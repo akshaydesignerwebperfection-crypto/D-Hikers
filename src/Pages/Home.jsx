@@ -243,7 +243,7 @@ export default function Home() {
     after:bg-[linear-gradient(to_bottom,rgba(10,20,40,0.35)_0%,rgba(10,20,40,0.15)_60%,rgba(10,20,40,0.55)_100%)]">
     <div className="bg-cover bg-center w-full h-full absolute top-0 left-0 w-100 h-100 animate-[subtleZoom_14s_ease-in-out_infinite_alternate] " style={{ backgroundImage: `url(${heroImg})` }} > </div>
     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center z-10">
-      <h1 className="main-title text-5xl sm:text-7xl font-normal font-['Reey']">Travel & <span class="hero-underline">Adventures
+      <h1 className="main-title text-5xl sm:text-7xl font-normal font-['Reey']">Travel & <span className="hero-underline">Adventures
       </span></h1>
       <div className="text-4xl text-white font-medium capitalize pt-5">Where Would You Like To Go?</div>
     </div>
@@ -738,13 +738,13 @@ export default function Home() {
             </div>
           </div>
           <div className="p-4 pt-0 relative z-10 after:absolute after:content-[''] after:top-[-18px] after:left-0 after:w-full after:h-[20px] after:bg-[#fff]  after:rounded-t-3xl ">
-            <div class="flex items-center gap-5 pb-4">
-              <span class="text-xs text-[#757783] flex gap-2 items-center">
-                <svg class="w-[14px] fill-[#aaa] " viewBox="0 0 24 24"><path d="M12 12c2.7 0 4-1.3 4-4S14.7 4 12 4 8 5.3 8 8s1.3 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"></path>
+            <div className="flex items-center gap-5 pb-4">
+              <span className="text-xs text-[#757783] flex gap-2 items-center">
+                <svg className="w-[14px] fill-[#aaa] " viewBox="0 0 24 24"><path d="M12 12c2.7 0 4-1.3 4-4S14.7 4 12 4 8 5.3 8 8s1.3 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"></path>
                 </svg>Admin
                 </span>
-                <span class="text-xs text-[#757783] flex gap-2 items-center">
-                  <svg class="w-[14px] fill-[#aaa] " viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"></path>
+                <span className="text-xs text-[#757783] flex gap-2 items-center">
+                  <svg className="w-[14px] fill-[#aaa] " viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"></path>
                  </svg>0 Comments
                 </span>
               </div>
@@ -770,10 +770,10 @@ export default function Home() {
           <p className='py-3 text-base text-[#757783] max-w-[400px]'>Join us! Our members can access savings of up to 50% and earn Trip Coins while booking.</p>
           <div className="flex">
             <button className="bg-[#FC3C3C] text-white py-3 px-6 rounded-md text-sm tracking-[2px] font-bold uppercase flex items-center gap-1">
-              <svg class="w-[14px] h-[14px] fill-[#fff]" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"></path></svg>
+              <svg className="w-[14px] h-[14px] fill-[#fff]" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"></path></svg>
               Sign In</button>
             <button className="bg-[transparent] py-3 px-6 rounded-md ml-4 border border-[#ccc] text-[#1e2235] font-bold uppercase flex items-center gap-2">
-              <svg class="w-[14px] h-[14px] fill-[#1e2235]" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4-1.3 4-4S14.7 4 12 4 8 5.3 8 8s1.3 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"></path></svg>
+              <svg className="w-[14px] h-[14px] fill-[#1e2235]" viewBox="0 0 24 24"><path d="M12 12c2.7 0 4-1.3 4-4S14.7 4 12 4 8 5.3 8 8s1.3 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"></path></svg>
               Register</button>
           </div>
         </div>
